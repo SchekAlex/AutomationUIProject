@@ -3,6 +3,8 @@ package automation.utils;
 import automation.drivers.Driver;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 import org.springframework.util.FileCopyUtils;
 
 import java.io.File;
@@ -12,7 +14,7 @@ import java.io.InputStream;
 import java.util.Base64;
 import java.util.Properties;
 import java.util.Random;
-
+@Component
 public class Utils{
 
     private String result = "";
